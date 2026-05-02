@@ -1,0 +1,363 @@
+{{!< default}}
+
+{{#contentFor "content"}}
+
+<!-- ============================================================
+     SECTION 1: HERO
+     ============================================================ -->
+<section class="hero" id="home">
+  <div
+    class="hero-bg"
+    {{#if @site.cover_image}}style="background-image: url('{{img_url @site.cover_image size="xl"}}');"{{/if}}
+  ></div>
+  <div class="hero-overlay"></div>
+
+  {{> navigation}}
+
+  <div class="hero-body">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <h1 class="hero-headline">
+            A political system<br>
+            that can finally<br>
+            <span class="hero-listen-line"><em>listen</em><span class="hero-dot">.</span></span>
+          </h1>
+          <p class="hero-subtext">
+            VOICE brings thousands of real conversations together in real time — so representatives understand what people actually think, need and experience.
+          </p>
+          <div class="hero-actions">
+            <a href="#how-it-works" class="btn-primary">See how it works →</a>
+            <a href="#welcome" class="btn-ghost">▶&nbsp; See it in action</a>
+          </div>
+        </div>
+
+        <div class="hero-widget" aria-label="Live constituency data">
+
+          <div class="widget-header">
+            <span class="widget-badge">MP Dashboard</span>
+            <div class="widget-live">
+              <span class="widget-dot"></span>
+              Live in North Durham
+            </div>
+          </div>
+
+          <div class="widget-primary">
+            <div class="widget-number">1,284</div>
+            <div class="widget-trend">
+              <span class="widget-trend-arrow">↑</span>
+              <span class="widget-trend-value">12%</span>
+            </div>
+          </div>
+          <div class="widget-unit">conversations this week</div>
+
+          <div class="widget-divider"></div>
+
+          <div class="widget-section-label">Top concerns</div>
+          <div class="widget-concerns-list">
+            <div class="widget-concern">
+              <span class="widget-concern-dot"></span>
+              <span class="widget-concern-name">Housing</span>
+              <span class="widget-concern-bar-wrap"><span class="widget-concern-bar" style="width:78%"></span></span>
+              <span class="widget-concern-count">247</span>
+            </div>
+            <div class="widget-concern">
+              <span class="widget-concern-dot"></span>
+              <span class="widget-concern-name">GP access</span>
+              <span class="widget-concern-bar-wrap"><span class="widget-concern-bar" style="width:58%"></span></span>
+              <span class="widget-concern-count">189</span>
+            </div>
+            <div class="widget-concern">
+              <span class="widget-concern-dot"></span>
+              <span class="widget-concern-name">Jobs</span>
+              <span class="widget-concern-bar-wrap"><span class="widget-concern-bar" style="width:48%"></span></span>
+              <span class="widget-concern-count">156</span>
+            </div>
+            <div class="widget-concern">
+              <span class="widget-concern-dot"></span>
+              <span class="widget-concern-name">Transport</span>
+              <span class="widget-concern-bar-wrap"><span class="widget-concern-bar" style="width:31%"></span></span>
+              <span class="widget-concern-count">101</span>
+            </div>
+          </div>
+
+          <div class="widget-divider"></div>
+
+          <div class="widget-section-label">Conversations this week</div>
+          <div class="widget-chart" aria-hidden="true">
+            <div class="widget-bar-wrap"><span class="widget-bar" style="height:42%"></span><span class="widget-day">M</span></div>
+            <div class="widget-bar-wrap"><span class="widget-bar" style="height:58%"></span><span class="widget-day">T</span></div>
+            <div class="widget-bar-wrap"><span class="widget-bar" style="height:37%"></span><span class="widget-day">W</span></div>
+            <div class="widget-bar-wrap"><span class="widget-bar" style="height:72%"></span><span class="widget-day">T</span></div>
+            <div class="widget-bar-wrap"><span class="widget-bar" style="height:63%"></span><span class="widget-day">F</span></div>
+            <div class="widget-bar-wrap"><span class="widget-bar" style="height:88%"></span><span class="widget-day">S</span></div>
+            <div class="widget-bar-wrap"><span class="widget-bar widget-bar--today" style="height:76%"></span><span class="widget-day widget-day--today">S</span></div>
+          </div>
+
+          <div class="widget-footer">
+            Powered by <strong>VOICE</strong>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 2: THE PROBLEM
+     ============================================================ -->
+<section class="problem" id="the-problem">
+  <div class="container">
+    <div class="problem-inner">
+
+      <div class="problem-left">
+        <p class="section-label section-label--red">The Problem.</p>
+        <h2 class="problem-headline">
+          The system wasn't<br>
+          built to listen.<br>
+          We're building<br>
+          <span class="problem-script-line"><em>one that is.</em></span>
+        </h2>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-point">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/>
+            </svg>
+          </div>
+          <p>MPs are expected to represent tens of thousands of people.</p>
+        </div>
+        <div class="problem-point">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <p>But there's no real way to find out how people think — across everyone — continuously, and in depth.</p>
+        </div>
+        <div class="problem-point">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.531V19.94a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.506-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/>
+            </svg>
+          </div>
+          <p>So most voices are never heard.</p>
+        </div>
+        <div class="problem-point">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 5.491z"/>
+            </svg>
+          </div>
+          <p>And decisions are made with incomplete information.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 3: WELCOME TO VOICE
+     ============================================================ -->
+<section class="welcome" id="welcome">
+  <div class="container">
+    <div class="welcome-inner">
+
+      <div class="welcome-left">
+        <h2 class="welcome-headline">Welcome to VOICE.</h2>
+        <div class="welcome-underline"></div>
+        <p class="welcome-body">
+          An always-on system anyone can talk to, any time, about anything that matters to them.
+        </p>
+        <p class="welcome-body">
+          What they say joins everything everyone else is saying — and binds the representatives to act on it.
+        </p>
+        <p class="welcome-tagline">A real picture starts here.</p>
+      </div>
+
+      <div class="welcome-right">
+        <div class="chat-thread">
+          <div class="chat-msg chat-msg--user">
+            <div class="chat-avatar chat-avatar--f" aria-hidden="true"></div>
+            <div class="chat-bubble">I can't get a GP appointment for my dad.</div>
+          </div>
+          <div class="chat-msg chat-msg--user chat-msg--right">
+            <div class="chat-bubble">Same here — waiting nearly three weeks.</div>
+            <div class="chat-avatar chat-avatar--m" aria-hidden="true"></div>
+          </div>
+          <div class="chat-msg chat-msg--user">
+            <div class="chat-avatar chat-avatar--f2" aria-hidden="true"></div>
+            <div class="chat-bubble">It's even worse if you work shifts.</div>
+          </div>
+          <div class="chat-msg chat-msg--voice">
+            <div class="chat-badge">VOICE</div>
+            <div class="chat-bubble chat-bubble--voice">Can VOICE show what's causing it?</div>
+          </div>
+        </div>
+        <p class="chat-caption"><em>A real picture starts here. ↗</em></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 4: HOW VOICE WORKS
+     ============================================================ -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+
+    <p class="section-label section-label--italic">HOW VOICE WORKS</p>
+
+    <div class="how-inner">
+
+      <div class="how-left">
+        <h2 class="how-headline">
+          You speak.<br>
+          It understands.<br>
+          Together,<br>
+          it decides.
+        </h2>
+      </div>
+
+      <div class="how-right">
+        <div class="how-steps">
+          <div class="how-flow">
+            <div class="how-step">
+              <div class="how-step-icon how-step-icon--purple">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="3.5" stroke="currentColor" stroke-width="1.5"/><path d="M10 12c-4 0-7 2-7 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M13 14c1 .5 2 1.3 2 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <span class="how-step-name">You speak</span>
+              <span class="how-step-desc">Share what matters to you. Any time. About anything.</span>
+            </div>
+            <span class="how-arrow">→</span>
+            <div class="how-step">
+              <div class="how-step-icon how-step-icon--blue">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17 10c0 3.87-3.13 7-7 7a7 7 0 01-7-7c0-3.87 3.13-7 7-7s7 3.13 7 7z" stroke="currentColor" stroke-width="1.5"/><path d="M10 7v3l2 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="how-step-name how-step-name--accent">VOICE understands</span>
+              <span class="how-step-desc">It listens, asks questions, understands nuance, and brings clarity.</span>
+            </div>
+            <span class="how-arrow">→</span>
+            <div class="how-step">
+              <div class="how-step-icon how-step-icon--peach">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="2" fill="currentColor"/><circle cx="5" cy="7" r="1.5" fill="currentColor" opacity=".5"/><circle cx="15" cy="7" r="1.5" fill="currentColor" opacity=".5"/><circle cx="5" cy="13" r="1.5" fill="currentColor" opacity=".5"/><circle cx="15" cy="13" r="1.5" fill="currentColor" opacity=".5"/></svg>
+              </div>
+              <span class="how-step-name">Together, it decides</span>
+              <span class="how-step-desc">Your voice joins everyone else's to create a real-time picture of what people think and need.</span>
+            </div>
+            <span class="how-arrow">→</span>
+            <div class="how-step">
+              <div class="how-step-icon how-step-icon--yellow">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 10l2.5 2.5L14 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="how-step-name how-step-name--accent">Acted on.</span>
+              <span class="how-step-desc">Not a survey. Not an agenda. Not ignored. Acted on.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="conversation-example">
+          <div class="conv-line">
+            <span class="conv-sender">User:</span>
+            <span class="conv-text">There was a fight on the bus this morning. A woman got hurt.</span>
+          </div>
+          <div class="conv-line">
+            <span class="conv-sender conv-sender--voice">VOICE:</span>
+            <span class="conv-text">That's really concerning. What route was it? Has it been reported?</span>
+          </div>
+          <div class="conv-line">
+            <span class="conv-sender">User:</span>
+            <span class="conv-text">The 36. Happens all the time. People are scared to use it.</span>
+          </div>
+          <div class="conv-line">
+            <span class="conv-sender conv-sender--voice">VOICE:</span>
+            <span class="conv-text">23 people have raised safety on the 36 this month. It will be on your MP's desk by Friday.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 5: PHOTOS
+     ============================================================ -->
+<section class="photos-section">
+  <div class="photos-strip">
+    <div class="photo-item photo-item--1"></div>
+    <div class="photo-item photo-item--2"></div>
+    <div class="photo-item photo-item--3"></div>
+    <div class="photo-item photo-item--4"></div>
+    <div class="photo-item photo-item--5"></div>
+  </div>
+  <div class="container">
+    <p class="photos-caption">
+      Real people. Real conversations. <em>Real change.</em>
+    </p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 6: LET'S MAKE IT HAPPEN (CTA)
+     ============================================================ -->
+<section class="cta-section" id="get-involved">
+  <div class="container">
+    <div class="cta-inner">
+
+      <div class="cta-left">
+        <div class="cta-rule"></div>
+        <h2 class="cta-headline">Let's make it happen.</h2>
+        <p class="cta-body">
+          VOICE only works if we build it together. Add your voice. Follow the journey.
+        </p>
+        <p class="cta-tagline"><em>Help make this real.</em></p>
+      </div>
+
+      <div class="cta-boxes">
+
+        <div class="cta-box">
+          <div class="cta-box-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 20c4.4 0 8-3.6 8-8s-3.6-8-8-8-8 3.6-8 8 3.6 8 8 8z" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="cta-box-title">Try VOICE</h3>
+          <p class="cta-box-desc">Be one of the first to have a real conversation about what matters to you.</p>
+          <a href="#/portal/signup" class="cta-box-link">Speak now →</a>
+        </div>
+
+        <div class="cta-box">
+          <div class="cta-box-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="cta-box-title">Follow the journey</h3>
+          <p class="cta-box-desc">See how your voice and everyone else's create real change.</p>
+          <a href="#/portal/signup" class="cta-box-link">Stay updated →</a>
+        </div>
+
+        <div class="cta-box">
+          <div class="cta-box-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="cta-box-title">Help make it real</h3>
+          <p class="cta-box-desc">We need developers, designers, donors and believers. If that's you, let's talk.</p>
+          <a href="mailto:trevor@thinkmorestupidless.com" class="cta-box-link">Let's talk →</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/contentFor}}

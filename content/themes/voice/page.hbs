@@ -1,0 +1,36 @@
+{{!< default}}
+
+{{#contentFor "content"}}
+<article class="{{post_class}} page-template">
+
+  {{#if show_title_and_feature_image}}
+    <header class="post-header">
+      <div class="container">
+        <h1 class="post-title">{{title}}</h1>
+        {{#if excerpt}}
+          <p class="post-header-excerpt">{{excerpt}}</p>
+        {{/if}}
+      </div>
+    </header>
+
+    {{#if feature_image}}
+      <div class="post-feature-image">
+        <img
+          src="{{img_url feature_image size="xl"}}"
+          srcset="{{img_url feature_image size="m"}} 600w, {{img_url feature_image size="l"}} 1000w, {{img_url feature_image size="xl"}} 2000w"
+          alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+        >
+      </div>
+    {{/if}}
+  {{/if}}
+
+  <div class="post-body">
+    <div class="container">
+      <div class="post-content gh-content">
+        {{content}}
+      </div>
+    </div>
+  </div>
+
+</article>
+{{/contentFor}}

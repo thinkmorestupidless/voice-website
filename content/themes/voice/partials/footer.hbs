@@ -1,0 +1,57 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <a href="{{@site.url}}" class="footer-brand-link">
+          <span class="footer-brand-name">VOICE<span class="brand-dot">.</span></span>
+          <span class="footer-brand-tagline">Politics reimagined.</span>
+        </a>
+        <p class="footer-copyright">© 2025 VOICE CIC.<br>All rights reserved.</p>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col-title">EXPLORE</p>
+        <ul class="footer-nav-links">
+          <li><a href="#how-it-works">How VOICE Works</a></li>
+          <li><a href="#welcome">Where It Starts</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <p class="footer-col-title">ABOUT</p>
+        <ul class="footer-nav-links">
+          <li><a href="#about">Our mission</a></li>
+          <li><a href="#foundation">Foundation</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--signup">
+        <p class="footer-col-title">STAY IN THE LOOP</p>
+        <p class="footer-signup-desc">Get updates on the experiment, progress, and new communities.</p>
+        <form class="footer-email-form" data-members-form="subscribe">
+          <input
+            class="footer-email-input"
+            data-members-email
+            type="email"
+            placeholder="Your email address"
+            required
+          />
+          <button type="submit" class="footer-email-submit" aria-label="Subscribe">→</button>
+        </form>
+        <div class="footer-social">
+          {{#if @site.twitter}}
+            <a href="https://twitter.com/{{@site.twitter}}" target="_blank" rel="noopener" aria-label="Twitter/X">𝕏</a>
+          {{else}}
+            <a href="#" aria-label="Twitter/X">𝕏</a>
+          {{/if}}
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>

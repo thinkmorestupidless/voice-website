@@ -1,0 +1,49 @@
+{{!< default}}
+
+{{#contentFor "content"}}
+<header class="posts-header">
+  <div class="container">
+    <p class="section-label section-label--light">Updates</p>
+    <h1 class="posts-header-title">{{@site.title}}</h1>
+    <p class="posts-header-desc">{{@site.description}}</p>
+  </div>
+</header>
+
+<main class="posts-main">
+  <div class="container">
+    <div class="posts-grid">
+      {{#foreach posts}}
+        <article class="post-card {{post_class}}">
+          {{#if feature_image}}
+            <a href="{{url}}" class="post-card-image-link">
+              <div class="post-card-image">
+                <img
+                  src="{{img_url feature_image size="m"}}"
+                  srcset="{{img_url feature_image size="s"}} 300w, {{img_url feature_image size="m"}} 600w, {{img_url feature_image size="l"}} 1000w"
+                  alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+                  loading="lazy"
+                >
+              </div>
+            </a>
+          {{/if}}
+          <div class="post-card-body">
+            {{#primary_tag}}
+              <p class="post-card-tag">{{name}}</p>
+            {{/primary_tag}}
+            <h2 class="post-card-title"><a href="{{url}}">{{title}}</a></h2>
+            {{#if excerpt}}
+              <p class="post-card-excerpt">{{excerpt words="20"}}</p>
+            {{/if}}
+            <p class="post-card-meta">
+              <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMM YYYY"}}</time>
+              · {{reading_time}}
+            </p>
+          </div>
+        </article>
+      {{/foreach}}
+    </div>
+
+    {{pagination}}
+  </div>
+</main>
+{{/contentFor}}

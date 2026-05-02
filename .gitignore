@@ -1,0 +1,35 @@
+# Ghost CMS — installed core & runtime
+versions/
+current
+
+# Ghost runtime state
+.ghost-cli
+.ghostpid
+
+# Ghost bundled themes (symlinks into versions/)
+content/themes/casper
+content/themes/source
+
+# Ghost content — database, uploads, generated files
+content/data/
+content/images/
+content/files/
+content/media/
+content/logs/
+content/public/
+content/apps/
+
+# Ghost config — production may contain secrets
+config.production.json
+
+# Node
+node_modules/
+
+# Claude Code tooling
+.claude/
+.skill-archive/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride

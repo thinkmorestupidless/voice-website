@@ -1,0 +1,56 @@
+{{!< default}}
+
+{{#contentFor "content"}}
+<article class="{{post_class}}">
+
+  <header class="post-header">
+    <div class="container">
+      {{#primary_tag}}
+        <p class="post-tag-label">{{name}}</p>
+      {{/primary_tag}}
+      <h1 class="post-title">{{title}}</h1>
+      <div class="post-meta">
+        <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMM YYYY"}}</time>
+        {{#foreach authors}}
+          {{#if @first}} · {{/if}}<a href="{{url}}">{{name}}</a>{{#unless @last}}, {{/unless}}
+        {{/foreach}}
+        · {{reading_time}}
+      </div>
+    </div>
+  </header>
+
+  {{#if feature_image}}
+    <div class="post-feature-image">
+      <img
+        src="{{img_url feature_image size="xl"}}"
+        srcset="{{img_url feature_image size="m"}} 600w, {{img_url feature_image size="l"}} 1000w, {{img_url feature_image size="xl"}} 2000w"
+        alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+      >
+    </div>
+  {{/if}}
+
+  <div class="post-body">
+    <div class="container">
+      <div class="post-content gh-content">
+        {{content}}
+      </div>
+
+      <div class="post-nav">
+        {{#prev_post}}
+          <a href="{{url}}" class="post-nav-link post-nav-link--prev">
+            <span class="post-nav-dir">← Previous</span>
+            <span class="post-nav-title">{{title}}</span>
+          </a>
+        {{/prev_post}}
+        {{#next_post}}
+          <a href="{{url}}" class="post-nav-link post-nav-link--next">
+            <span class="post-nav-dir">Next →</span>
+            <span class="post-nav-title">{{title}}</span>
+          </a>
+        {{/next_post}}
+      </div>
+    </div>
+  </div>
+
+</article>
+{{/contentFor}}
