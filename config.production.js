@@ -5,13 +5,9 @@ module.exports = {
     host: '0.0.0.0'
   },
   database: {
-    client: 'mysql',
+    client: 'sqlite3',
     connection: {
-      host: process.env.MYSQL_HOST,
-      port: parseInt(process.env.MYSQL_PORT || '3306', 10),
-      user: process.env.MYSQL_USER,
-      password: process.env.MYSQL_PASSWORD,
-      database: process.env.MYSQL_DATABASE
+      filename: '/var/lib/ghost/content/data/ghost.db'
     }
   },
   mail: {
