@@ -12,7 +12,6 @@ content/themes/casper
 content/themes/source
 
 # Config with potential secrets
-config.production.json
 config.development.json
 
 # Dependencies
