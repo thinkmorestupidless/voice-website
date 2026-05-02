@@ -3,7 +3,7 @@ FROM ghost:6-alpine
 USER root
 
 # Copy production config so Ghost reads Railway env vars instead of defaults
-COPY config.production.js /var/lib/ghost/config.production.js
+COPY config.production.json /var/lib/ghost/config.production.json
 
 # Stage theme outside the VOLUME — files COPY'd into a VOLUME path are silently dropped at runtime
 COPY content/themes/voice /home/node/voice-theme

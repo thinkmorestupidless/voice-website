@@ -20,7 +20,7 @@ content/public/
 content/apps/
 
 # Ghost config — production may contain secrets
-config.production.json
+# config.production.json is tracked — no secrets, URL set via fly secrets
 
 # Node
 node_modules/
