@@ -2,6 +2,9 @@ FROM ghost:6-alpine
 
 USER root
 
+# Copy production config into Ghost's install directory (not the content VOLUME, so it persists)
+COPY config.production.json /var/lib/ghost/config.production.json
+
 # Stage theme outside the VOLUME — files COPY'd into a VOLUME path are silently dropped at runtime
 COPY content/themes/voice /home/node/voice-theme
 RUN chown -R node:node /home/node/voice-theme
