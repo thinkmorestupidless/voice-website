@@ -1,0 +1,31 @@
+# Ghost runtime — not needed in image
+versions/
+current
+content/data/
+content/images/
+content/files/
+content/media/
+content/logs/
+content/public/
+content/apps/
+content/themes/casper
+content/themes/source
+
+# Config with potential secrets
+config.production.json
+config.development.json
+
+# Dependencies
+node_modules/
+
+# VCS & tooling
+.git/
+.github/
+.claude/
+.skill-archive/
+
+# macOS & project artefacts
+.DS_Store
+*.png
+*.pdf
+*.pages
