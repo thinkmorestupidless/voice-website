@@ -11,7 +11,7 @@ RUN chown -R node:node /home/node/voice-theme
 
 # On each container start: fix volume ownership, seed the theme, then hand off to Ghost's own entrypoint.
 # Runs as root so it can chown the volume mount; Ghost's entrypoint handles the privilege drop to node.
-RUN printf '#!/bin/sh\nset -e\nmkdir -p /var/lib/ghost/content/themes\nchown -R node:node /var/lib/ghost/content\ncp -r /home/node/voice-theme /var/lib/ghost/content/themes/voice\nexec docker-entrypoint.sh "$@"\n' \
+RUN printf '#!/bin/sh\nset -e\nmkdir -p /var/lib/ghost/content/themes\nchown -R node:node /var/lib/ghost/content\nrm -rf /var/lib/ghost/content/themes/voice\ncp -r /home/node/voice-theme /var/lib/ghost/content/themes/voice\nexec docker-entrypoint.sh "$@"\n' \
     > /usr/local/bin/theme-entrypoint.sh \
     && chmod +x /usr/local/bin/theme-entrypoint.sh
 
