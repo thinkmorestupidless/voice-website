@@ -133,18 +133,14 @@ ul { list-style: none; }
 }
 
 .nav-brand {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
   text-decoration: none;
+  display: block;
 }
 
-.nav-brand-name {
-  font-size: 2.0rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  color: var(--white);
-  line-height: 1;
+.nav-logo {
+  height: 52px;
+  width: auto;
+  display: block;
 }
 
 .brand-dot {
@@ -152,14 +148,6 @@ ul { list-style: none; }
   font-size: 1.65em;
   line-height: 0;
   vertical-align: -0.02em;
-}
-
-.nav-brand-tagline {
-  font-size: 0.7rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 0.01em;
-  line-height: 1;
 }
 
 .nav-links {
@@ -286,11 +274,10 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    105deg,
+    to right,
     rgba(9, 9, 9, 0.92) 0%,
-    rgba(9, 9, 9, 0.85) 30%,
-    rgba(9, 9, 9, 0.08) 55%,
-    rgba(9, 9, 9, 0.00) 100%
+    rgba(9, 9, 9, 0.92) 40%,
+    rgba(9, 9, 9, 0.00) 58%
   );
 }
 
@@ -367,15 +354,14 @@ ul { list-style: none; }
 
 /* Live data widget */
 .hero-widget {
-  min-width: 280px;
+  width: 100%;
   max-width: 310px;
-  background: rgba(12, 12, 14, 0.72);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  background: #0c0c0e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding: 1.5rem 1.625rem 1.25rem;
   color: var(--white);
+  margin-top: 2.5rem;
 }
 
 .widget-header {
@@ -999,12 +985,11 @@ ul { list-style: none; }
   position: relative;
 }
 
-/* Placeholder tones - replace with real images via background-image */
-.photo-item--1 { background: #d4c9bc; }
-.photo-item--2 { background: #b8c4cc; }
-.photo-item--3 { background: #c8c0b4; }
-.photo-item--4 { background: #bac8be; }
-.photo-item--5 { background: #ccc4b8; }
+.photo-item--1 { background-image: url('../images/photo-1.jpg'); background-size: cover; background-position: center; }
+.photo-item--2 { background-image: url('../images/photo-2.jpg'); background-size: cover; background-position: center top; }
+.photo-item--3 { background-image: url('../images/photo-3.jpg'); background-size: cover; background-position: center; }
+.photo-item--4 { background-image: url('../images/photo-4.jpg'); background-size: cover; background-position: center; }
+.photo-item--5 { background-image: url('../images/photo-5.jpg'); background-size: cover; background-position: center; }
 
 .photo-item img {
   width: 100%;
@@ -1016,22 +1001,23 @@ ul { list-style: none; }
 .photo-item:hover img { transform: scale(1.04); }
 
 .photos-caption {
-  font-size: clamp(0.875rem, 1.3vw, 1rem);
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
   font-weight: 600;
   color: var(--black);
   letter-spacing: -0.01em;
   padding: 0 var(--px);
   max-width: var(--w);
   margin: 0 auto;
+  text-align: center;
 }
 
 .photos-caption em {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-weight: 500;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  font-size: 1.1em;
+  font-family: var(--font-script);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--red);
+  font-size: 1.45em;
+  letter-spacing: 0;
 }
 
 
@@ -1160,24 +1146,15 @@ ul { list-style: none; }
 }
 
 .footer-brand-link {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
   text-decoration: none;
+  display: block;
   margin-bottom: 1.5rem;
 }
 
-.footer-brand-name {
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  color: var(--white);
-  line-height: 1;
-}
-
-.footer-brand-tagline {
-  font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.4);
+.footer-logo {
+  height: 52px;
+  width: auto;
+  display: block;
 }
 
 .footer-copyright {
@@ -1592,7 +1569,7 @@ ul { list-style: none; }
 
 @media (max-width: 900px) {
   .hero-content   { grid-template-columns: 1fr; }
-  .hero-widget    { display: none; }
+  .hero-widget    { max-width: 100%; }
 
   .problem-inner  { grid-template-columns: 1fr; gap: 3rem; }
   .welcome-inner  { grid-template-columns: 1fr; gap: 3rem; }

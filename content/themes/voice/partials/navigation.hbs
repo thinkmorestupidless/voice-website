@@ -1,7 +1,6 @@
 <nav class="site-nav">
-  <a href="{{@site.url}}" class="nav-brand">
-    <span class="nav-brand-name">VOICE<span class="brand-dot">.</span></span>
-    <span class="nav-brand-tagline">Politics reimagined.</span>
+  <a href="{{@site.url}}" class="nav-brand" aria-label="VOICE. — Home">
+    <img src="{{asset "images/logo-tagline.svg"}}" class="nav-logo" alt="VOICE. Politics reimagined." width="280" height="120">
   </a>
   <ul class="nav-links">
     {{#foreach navigation}}

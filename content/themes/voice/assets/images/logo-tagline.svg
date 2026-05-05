@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 120" width="280" height="120" role="img" aria-label="VOICE. Politics reimagined.">
+  <text
+    x="20"
+    y="68"
+    font-family="'Hanken Grotesk', sans-serif"
+    font-weight="800"
+    font-size="72"
+    fill="#ffffff"
+    letter-spacing="-2.88"
+  >VOICE<tspan fill="#c8102e" font-size="118.8" dy="2">.</tspan></text>
+  <text
+    x="20"
+    y="102"
+    font-family="'Hanken Grotesk', sans-serif"
+    font-weight="400"
+    font-size="22"
+    fill="#ffffff"
+    fill-opacity="0.5"
+    textLength="235"
+    lengthAdjust="spacingAndGlyphs"
+  >Politics reimagined.</text>
+</svg>
